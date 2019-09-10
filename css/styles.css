@@ -1,0 +1,132 @@
+/* CSS styling */
+body {
+	background-color: #fff;
+	color: #2f2e2e;
+	font-family: 'Roboto Slab', serif;;
+}
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+ul li {
+	font-family: 'Open Sans', sans-serif;
+}
+/* navbar */
+nav{
+	background-color: #fff;
+}
+/* homepage */
+.home {
+	background-color: pink;
+	height:90vh;
+}
+.welcome-text, .about-text {
+	padding: 7vh 10vw;
+}
+.welcome-image {
+	/* Create the parallax scrolling effect */
+	height: 90vh;
+	background-color:#2f2e2e;
+	background-image: url('../images/pink-flower.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;	
+}
+.welcome-image h1 {
+	font-size: 30vw;
+	font-weight: 600;
+	padding: 7vh 10vw;
+	color: pink;
+}
+/* about page*/
+.about {
+	padding: 3em 1em;
+}
+
+.about ul li {
+	list-style-type: none;
+	display: inline-block;
+}
+.fab {
+  font-size: 2em;
+  width: 2em;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+/* skills page */
+.skills {
+	background-color: pink;
+	/* Create the parallax scrolling effect */
+    background-image: url('../images/pink-cloud.jpeg');
+	background-size: cover;
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	padding: 6vh 6vw;
+}
+.skills .heading, .my-work .heading {
+	padding: 1vh 1vw;
+}
+.skills .skills-text {
+	background-color: rgba(248, 247, 216, 0.7);
+	padding: 6vh 2vw;
+}
+/* work page */
+.my-work {
+	padding: 6vh 6vw;
+}
+/* top and bottom padding for my work thumbnails */
+.my-work .img-size {
+	padding: 1vh;
+}
+/* The "show" class is added to the filtered elements */
+#myBtnContainer {
+	padding: 1em;
+}
+.column {
+	display: none;
+}
+.show {
+  display: block;
+}
+/* contact page */
+.contact {
+	color: pink;
+	padding: 8vh 8vw;
+}
+.contact a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+	color: pink;
+}
+/* footer */
+.footer p {
+	padding-top: 2vh;
+}
+/* add slide animation to all the container-fluid */
+.slide {
+	animation-name: slide;
+	animation-duration: 1s;
+}
+
+@keyframes slide {
+	0% { 
+		opacity: 0;
+		transform: translateY(70%);
+	}
+	100% { 
+		   opacity: 1;
+		   transform: translateY(0%);
+	}
+}
+
+@media screen and (min-width:320px) and (max-width: 768px){
+	.welcome-text {
+		padding-top: 12vh;
+	}
+
+	.welcome-image h1 {
+    	font-size: 58vw;
+    	padding: 4vh 10vw;
+    }
+}
