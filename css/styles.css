@@ -11,6 +11,9 @@ p {
 ul li {
 	font-family: 'Open Sans', sans-serif;
 }
+a:link, a:visited, a:hover, a:active {
+	color: pink;
+}
 /* navbar */
 nav{
 	background-color: #fff;
